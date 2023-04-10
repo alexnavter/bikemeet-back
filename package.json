@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:dev": "jest --watchAll --passWithNoTests",
+    "build": "npx tsc",
+    "build:dev": "npx tsc -w",
+    "start": "node dist",
+    "start:dev": "node --watch dist",
     "test": "jest --passWithNoTests",
+    "test:dev": "jest --watchAll --passWithNoTests",
     "prepare": "husky install"
   },
   "repository": {
